@@ -1,0 +1,2947 @@
+/*==================================================
+    TRAVELGO V2.0
+    Main Stylesheet
+==================================================*/
+
+/*==========================
+        GOOGLE FONT
+==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+/*==========================
+        ROOT
+==========================*/
+:root{
+
+    --primary:#0D6EFD;
+    --secondary:#20C997;
+    --warning:#FFC107;
+
+    --dark:#212529;
+    --gray:#6C757D;
+    --light:#F8FAFC;
+
+    --white:#FFFFFF;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s;
+
+}
+
+/*==========================
+        RESET
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    color:var(--dark);
+
+    background:#fff;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+    margin:0;
+    padding:0;
+
+}
+
+.section-padding{
+
+    padding:100px 0;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+}
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.section-title h2{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:var(--gray);
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/*==========================
+        HEADER
+==========================*/
+
+.header{
+
+    position:fixed;
+
+    width:100%;
+
+    z-index:999;
+
+    transition:.4s;
+
+}
+
+.navbar{
+
+    padding:20px 0;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.navbar.scrolled{
+
+    background:#fff;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.08);
+
+}
+
+.navbar-brand img{
+
+    height:55px;
+
+}
+
+.navbar-nav{
+
+    gap:18px;
+
+}
+
+.nav-link{
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.navbar.scrolled .nav-link{
+
+    color:var(--dark);
+
+}
+
+.nav-link:hover{
+
+    color:var(--secondary);
+
+}
+
+.nav-link.active{
+
+    color:var(--secondary);
+
+}
+
+.nav-action{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+/*==========================
+        BUTTON
+==========================*/
+
+.btn-login{
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+.navbar.scrolled .btn-login{
+
+    color:var(--dark);
+
+}
+
+.btn-register{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:11px 22px;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+}
+
+.btn-register:hover{
+
+    background:var(--secondary);
+
+    color:#fff;
+
+}
+
+.btn-primary-custom{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    display:inline-block;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.btn-primary-custom:hover{
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-custom{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    margin-left:15px;
+
+    display:inline-block;
+
+    transition:.35s;
+
+}
+
+.btn-outline-custom:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+/*==========================
+        HERO
+==========================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(rgba(8,25,55,.70),rgba(8,25,55,.70)),
+    url("../images/banner/hero.jpg");
+
+    background-position:center;
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    line-height:1.15;
+
+    color:#fff;
+
+    font-weight:800;
+
+    margin-top:20px;
+
+}
+
+.hero p{
+
+    max-width:720px;
+
+    margin:30px auto;
+
+    color:#fff;
+
+    opacity:.95;
+
+    font-size:20px;
+
+}
+
+.hero-button{
+
+    margin-top:35px;
+
+}
+
+.hero-image{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/*==========================
+        ANIMATION
+==========================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+/*==================================================
+        SEARCH BOX
+==================================================*/
+
+.search-box{
+
+    margin-top:-70px;
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+.search-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.search-card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+}
+
+.search-card .form-control,
+.search-card .form-select{
+
+    height:55px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    transition:var(--transition);
+
+}
+
+.search-card .form-control:focus,
+.search-card .form-select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:none;
+
+}
+
+.btn-search{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.btn-search:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-2px);
+
+}
+
+/*==================================================
+        SERVICES
+==================================================*/
+
+.services{
+
+    background:var(--light);
+
+}
+
+.service-card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+    height:100%;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.service-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(13,110,253,.1);
+
+    color:var(--primary);
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.service-card h4{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:var(--gray);
+
+}
+
+/*==================================================
+        DESTINATIONS
+==================================================*/
+
+.destination-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+
+.destination-card img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.destination-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.destination-content{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    padding:30px;
+
+    background:linear-gradient(transparent,rgba(0,0,0,.8));
+
+    color:#fff;
+
+}
+
+.destination-content h4{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.destination-content p{
+
+    margin:0;
+
+}
+
+/*==================================================
+        TOUR
+==================================================*/
+
+.tour-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:var(--transition);
+
+    height:100%;
+
+}
+
+.tour-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.tour-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.tour-body{
+
+    padding:25px;
+
+}
+
+.tour-location{
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+.tour-body h4{
+
+    font-family:'Poppins',sans-serif;
+
+    margin:15px 0;
+
+}
+
+.tour-body p{
+
+    color:var(--gray);
+
+    margin-bottom:25px;
+
+}
+
+.tour-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.tour-footer h5{
+
+    margin:0;
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.btn-book{
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transition:var(--transition);
+
+}
+
+.btn-book:hover{
+
+    background:var(--secondary);
+
+    color:#fff;
+
+}
+
+/*==================================================
+        HOTEL
+==================================================*/
+
+.hotels{
+
+    background:var(--light);
+
+}
+
+.hotel-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    height:100%;
+
+}
+
+.hotel-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.hotel-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.hotel-body{
+
+    padding:25px;
+
+}
+
+.hotel-body h4{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.hotel-body p{
+
+    color:#FFC107;
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+}
+
+.hotel-body h5{
+
+    color:var(--primary);
+
+    font-size:26px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+/*==================================================
+        WHY CHOOSE US
+==================================================*/
+
+.why-us{
+
+    background:#fff;
+
+}
+
+.feature-box{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    height:100%;
+
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.feature-box i{
+
+    width:85px;
+
+    height:85px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto 25px;
+
+    background:rgba(32,201,151,.12);
+
+    color:var(--secondary);
+
+    font-size:34px;
+
+}
+
+.feature-box h4{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.feature-box p{
+
+    color:var(--gray);
+
+    margin:0;
+
+}
+
+/*==================================================
+        TESTIMONIAL
+==================================================*/
+
+.testimonials{
+
+    background:var(--light);
+
+}
+
+.testimonial-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+    transition:var(--transition);
+
+    height:100%;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.testimonial-card img{
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border:5px solid rgba(13,110,253,.1);
+
+}
+
+.testimonial-card h5{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.testimonial-card p{
+
+    color:var(--gray);
+
+    font-style:italic;
+
+    margin:0;
+
+}
+
+/*==================================================
+            BLOG
+==================================================*/
+
+.blog{
+
+    background:#fff;
+
+}
+
+.blog-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+    transition:var(--transition);
+
+    height:100%;
+
+}
+
+.blog-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.blog-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.blog-body{
+
+    padding:25px;
+
+}
+
+.blog-body h4{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    line-height:1.4;
+
+}
+
+.blog-body p{
+
+    color:var(--gray);
+
+    margin-bottom:20px;
+
+}
+
+.blog-body a{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.blog-body a:hover{
+
+    color:var(--secondary);
+
+}
+
+/*==================================================
+        NEWSLETTER
+==================================================*/
+
+.newsletter{
+
+    padding:100px 0;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+}
+
+.newsletter-box{
+
+    max-width:850px;
+
+    margin:auto;
+
+    color:#fff;
+
+}
+
+.newsletter-box h2{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.newsletter-box p{
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+    opacity:.95;
+
+}
+
+.newsletter-form{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter-form input{
+
+    width:450px;
+
+    max-width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:0 25px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.newsletter-form button{
+
+    border:none;
+
+    background:#fff;
+
+    color:var(--primary);
+
+    padding:0 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.newsletter-form button:hover{
+
+    background:var(--warning);
+
+    color:var(--dark);
+
+}
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    background:#0B1220;
+
+    color:#fff;
+
+    padding:80px 0 30px;
+
+}
+
+.footer-logo{
+
+    height:60px;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#C7CED8;
+
+    line-height:1.8;
+
+}
+
+.footer h5{
+
+    font-family:'Poppins',sans-serif;
+
+    margin-bottom:25px;
+
+    font-size:22px;
+
+}
+
+.footer ul{
+
+    padding:0;
+
+}
+
+.footer ul li{
+
+    margin-bottom:14px;
+
+}
+
+.footer ul li a{
+
+    color:#C7CED8;
+
+    transition:var(--transition);
+
+}
+
+.footer ul li a:hover{
+
+    color:var(--secondary);
+
+    padding-left:6px;
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.12);
+
+    margin:40px 0 25px;
+
+}
+
+/*==================================================
+                SOCIAL ICON
+==================================================*/
+
+.social-links{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.social-links a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    transition:var(--transition);
+
+}
+
+.social-links a:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+
+/*==================================================
+                IMAGE EFFECT
+==================================================*/
+
+.service-card,
+.destination-card,
+.tour-card,
+.hotel-card,
+.blog-card,
+.feature-box,
+.testimonial-card{
+
+    overflow:hidden;
+
+}
+
+.destination-card img,
+.hotel-card img,
+.tour-card img,
+.blog-card img{
+
+    transition:.45s;
+
+}
+
+.destination-card:hover img,
+.hotel-card:hover img,
+.tour-card:hover img,
+.blog-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==================================================
+                FORM
+==================================================*/
+
+input,
+select,
+button,
+textarea{
+
+    font-family:'Inter',sans-serif;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+/*==================================================
+                SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#EDF2F7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/*==================================================
+                SELECTION
+==================================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==================================================
+            SMOOTH ANIMATION
+==================================================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==================================================
+            BACK TO TOP
+==================================================*/
+
+.back-top{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:var(--shadow);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:var(--transition);
+
+    z-index:999;
+
+}
+
+.back-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-top:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-5px);
+
+}
+
+/*==================================================
+                UTILITIES
+==================================================*/
+
+.text-primary{
+
+    color:var(--primary)!important;
+
+}
+
+.text-secondary{
+
+    color:var(--secondary)!important;
+
+}
+
+.bg-light{
+
+    background:var(--light)!important;
+
+}
+
+.rounded-20{
+
+    border-radius:20px;
+
+}
+
+.shadow-custom{
+
+    box-shadow:var(--shadow);
+
+}
+
+.transition{
+
+    transition:var(--transition);
+
+}
+
+/*==================================================
+                END OF FILE
+==================================================*/
+/*==================================================
+                TOUR PAGE
+==================================================*/
+
+.page-banner{
+
+    padding:180px 0 100px;
+
+    background:
+    linear-gradient(rgba(9,30,66,.65),rgba(9,30,66,.65)),
+    url("../images/banner/tour-banner.jpg") center/cover;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.page-banner span{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:50px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+.page-banner h1{
+
+    font-size:56px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.page-banner p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+/*================ FILTER ================*/
+
+.tour-filter{
+
+    margin-top:-45px;
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+.filter-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+/*================ TOUR CARD ================*/
+
+.tour-item{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+    height:100%;
+
+}
+
+.tour-item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.tour-item img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.tour-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.tour-content{
+
+    padding:25px;
+
+}
+
+/*================ BADGE ================*/
+
+.tour-badge{
+
+    position:absolute;
+
+    left:15px;
+
+    top:15px;
+
+    background:#ff9800;
+
+    color:#fff;
+
+    padding:7px 16px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    z-index:10;
+
+}
+
+.tour-badge.sale{
+
+    background:#e53935;
+
+}
+
+/*================ WISHLIST ================*/
+
+.wishlist-btn{
+
+    position:absolute;
+
+    right:15px;
+
+    top:15px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    z-index:10;
+
+    transition:.3s;
+
+}
+
+.wishlist-btn:hover{
+
+    background:#ff4d6d;
+
+    color:#fff;
+
+}
+
+/*================ RATING ================*/
+
+.tour-rating{
+
+    color:#f9a825;
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+}
+
+.tour-rating span{
+
+    color:#666;
+
+    margin-left:5px;
+
+}
+
+/*================ TITLE ================*/
+
+.tour-content h3{
+
+    font-size:24px;
+
+    font-family:'Poppins',sans-serif;
+
+    margin-bottom:12px;
+
+}
+
+/*================ LOCATION ================*/
+
+.tour-location{
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+/*================ FEATURE ================*/
+
+.tour-feature{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.tour-feature span{
+
+    background:#f4f6fb;
+
+    padding:8px 12px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+}
+
+/*================ PRICE ================*/
+
+.tour-price del{
+
+    display:block;
+
+    color:#999;
+
+    margin-bottom:5px;
+
+}
+
+.tour-price h4{
+
+    color:#0d6efd;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/*================ BUTTON ================*/
+
+.tour-item .btn-book{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.tour-item .btn-book:hover{
+
+    background:#20c997;
+
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:768px){
+
+    .page-banner{
+
+        padding:150px 0 80px;
+
+    }
+
+    .page-banner h1{
+
+        font-size:38px;
+
+    }
+
+    .filter-card{
+
+        padding:20px;
+
+    }
+
+}
+/*==================================================
+                HOTEL PAGE
+==================================================*/
+
+/* HOTEL CARD */
+
+.hotel-item{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+    height:100%;
+
+}
+
+.hotel-item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.hotel-item img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.hotel-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* CONTENT */
+
+.hotel-content{
+
+    padding:25px;
+
+}
+
+/* BADGE */
+
+.hotel-badge{
+
+    position:absolute;
+
+    left:15px;
+
+    top:15px;
+
+    background:#198754;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    z-index:10;
+
+}
+
+.hotel-badge.sale{
+
+    background:#dc3545;
+
+}
+
+/* RATING */
+
+.hotel-rating{
+
+    color:#f8b400;
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+}
+
+.hotel-rating span{
+
+    color:#666;
+
+    margin-left:8px;
+
+}
+
+/* TITLE */
+
+.hotel-content h3{
+
+    font-size:24px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+/* LOCATION */
+
+.hotel-location{
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+/* FEATURE */
+
+.hotel-feature{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.hotel-feature span{
+
+    background:#f5f7fb;
+
+    padding:8px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+}
+
+/* PRICE */
+
+.hotel-price small{
+
+    display:block;
+
+    color:#888;
+
+}
+
+.hotel-price h4{
+
+    color:#0d6efd;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin:5px 0;
+
+}
+
+.hotel-price span{
+
+    color:#666;
+
+}
+
+/* BUTTON */
+
+.hotel-item .btn-book{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.hotel-item .btn-book:hover{
+
+    background:#20c997;
+
+    color:#fff;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hotel-item img{
+
+        height:220px;
+
+    }
+
+    .hotel-content h3{
+
+        font-size:20px;
+
+    }
+
+    .hotel-price h4{
+
+        font-size:26px;
+
+    }
+
+}
+/*==================================================
+                    BLOG PAGE
+==================================================*/
+
+/* BLOG SEARCH */
+
+.blog-search{
+
+    margin-top:-45px;
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+/* FEATURED BLOG */
+
+.featured-blog{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    margin-bottom:50px;
+
+}
+
+.featured-blog img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+}
+
+.featured-blog .col-lg-6:last-child{
+
+    padding:45px;
+
+}
+
+.featured-tag{
+
+    display:inline-block;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.featured-blog h2{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+    line-height:1.3;
+
+}
+
+.featured-blog p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.blog-meta{
+
+    display:flex;
+
+    gap:25px;
+
+    color:#888;
+
+    margin-bottom:30px;
+
+}
+
+.blog-meta i{
+
+    color:#0d6efd;
+
+    margin-right:6px;
+
+}
+
+/* BLOG CARD */
+
+.blog-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.blog-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.blog-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.blog-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.blog-content{
+
+    padding:25px;
+
+}
+
+/* CATEGORY */
+
+.blog-category{
+
+    display:inline-block;
+
+    background:#e8f1ff;
+
+    color:#0d6efd;
+
+    padding:7px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+/* TITLE */
+
+.blog-content h3{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    line-height:1.4;
+
+}
+
+/* TEXT */
+
+.blog-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+/* FOOTER */
+
+.blog-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:14px;
+
+}
+
+.blog-footer span{
+
+    color:#888;
+
+}
+
+.blog-footer i{
+
+    color:#0d6efd;
+
+}
+
+.blog-footer a{
+
+    text-decoration:none;
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.blog-footer a:hover{
+
+    color:#20c997;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .featured-blog img{
+
+        height:300px;
+
+    }
+
+    .featured-blog h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .featured-blog .col-lg-6:last-child{
+
+        padding:30px;
+
+    }
+
+    .featured-blog h2{
+
+        font-size:26px;
+
+    }
+
+    .blog-content h3{
+
+        font-size:20px;
+
+    }
+
+    .blog-meta{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+}
+/*==================================================
+                CONTACT PAGE
+==================================================*/
+
+.contact-card{
+
+    background:#fff;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.contact-card i{
+
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:20px;
+
+}
+
+.contact-card h4{
+
+    margin-bottom:15px;
+    font-weight:700;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    border-radius:12px;
+    padding:14px;
+
+}
+
+.faq .accordion-item{
+
+    border:none;
+    margin-bottom:15px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+.faq .accordion-button{
+
+    font-weight:600;
+    padding:18px;
+
+}
+
+.faq .accordion-button:not(.collapsed){
+
+    background:#0d6efd;
+    color:#fff;
+
+}
+
+.faq .accordion-button:focus{
+
+    box-shadow:none;
+
+}
+/*==================================================
+                FLIGHTS PAGE
+==================================================*/
+
+/* SEARCH */
+
+.flight-search{
+
+    margin-top:-45px;
+    position:relative;
+    z-index:20;
+
+}
+
+/* FLIGHT CARD */
+
+.flight-card{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    gap:25px;
+
+}
+
+.flight-card:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+/* AIRLINE */
+
+.flight-airline{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    min-width:230px;
+
+}
+
+.flight-airline img{
+
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:12px;
+    padding:6px;
+    border:1px solid #eee;
+
+}
+
+.flight-airline h5{
+
+    margin-bottom:5px;
+    font-weight:700;
+
+}
+
+.flight-airline small{
+
+    color:#888;
+
+}
+
+/* ROUTE */
+
+.flight-route{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:1;
+    gap:25px;
+
+}
+
+.flight-time{
+
+    text-align:center;
+
+}
+
+.flight-time h3{
+
+    font-size:30px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:6px;
+
+}
+
+.flight-time span{
+
+    font-size:15px;
+    color:#666;
+    font-weight:600;
+
+}
+
+/* LINE */
+
+.flight-line{
+
+    text-align:center;
+    min-width:170px;
+
+}
+
+.flight-line i{
+
+    color:#0d6efd;
+    font-size:24px;
+    margin-bottom:8px;
+
+}
+
+.flight-line p{
+
+    margin:0;
+    color:#888;
+    font-size:14px;
+
+}
+
+/* PRICE */
+
+.flight-price{
+
+    min-width:180px;
+    text-align:right;
+
+}
+
+.flight-price h4{
+
+    color:#0d6efd;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.flight-price .btn-book{
+
+    padding:12px 30px;
+    border-radius:12px;
+
+}
+
+/* FILTER */
+
+.flight-list .filter-card{
+
+    position:sticky;
+    top:110px;
+
+}
+
+.flight-list .form-check{
+
+    margin-bottom:15px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .flight-card{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+    .flight-airline{
+
+        justify-content:center;
+        min-width:auto;
+
+    }
+
+    .flight-route{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .flight-price{
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .flight-airline img{
+
+        width:50px;
+        height:50px;
+
+    }
+
+    .flight-time h3{
+
+        font-size:24px;
+
+    }
+
+    .flight-price h4{
+
+        font-size:26px;
+
+    }
+
+}
+/*==================================================
+                COMBO PAGE
+==================================================*/
+
+.combo-search{
+
+    margin-top:-45px;
+    position:relative;
+    z-index:20;
+
+}
+
+/* Featured Combo */
+
+.featured-combo{
+
+    background:#fff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    margin-bottom:50px;
+
+}
+
+.featured-combo img{
+
+    width:100%;
+    height:420px;
+    object-fit:cover;
+
+}
+
+.featured-combo .col-lg-6:last-child{
+
+    padding:45px;
+
+}
+
+.combo-badge{
+
+    display:inline-block;
+    background:#ff5722;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:700;
+    margin-bottom:20px;
+
+}
+
+.combo-feature-list{
+
+    list-style:none;
+    padding:0;
+    margin:20px 0;
+
+}
+
+.combo-feature-list li{
+
+    margin-bottom:12px;
+
+}
+
+.combo-feature-list i{
+
+    color:#0d6efd;
+    width:25px;
+
+}
+
+/* Combo Card */
+
+.combo-card{
+
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    position:relative;
+    height:100%;
+
+}
+
+.combo-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.combo-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.5s;
+
+}
+
+.combo-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.combo-content{
+
+    padding:22px;
+
+}
+
+.combo-content h4{
+
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.combo-content p{
+
+    color:#666;
+    margin-bottom:8px;
+
+}
+
+/* Discount */
+
+.discount-badge{
+
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#dc3545;
+    color:#fff;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+
+}
+
+/* Price */
+
+.combo-price del{
+
+    color:#999;
+    display:block;
+
+}
+
+.combo-price h5{
+
+    color:#0d6efd;
+    font-size:28px;
+    font-weight:700;
+    margin:8px 0 20px;
+
+}
+
+.combo-card .btn-book{
+
+    width:100%;
+    display:block;
+    text-align:center;
+
+}
+
+@media(max-width:991px){
+
+    .featured-combo img{
+
+        height:300px;
+
+    }
+
+    .featured-combo .col-lg-6:last-child{
+
+        padding:30px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .combo-content h4{
+
+        font-size:20px;
+
+    }
+
+}
