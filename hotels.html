@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Khách sạn | Travelgo</title>
+
+    <meta name="description"
+        content="Đặt khách sạn nhanh chóng với Travelgo">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!--==========================
+        HEADER
+===========================-->
+
+<header class="header">
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+                href="index.html">
+
+                <img src="images/logo/logo.png"
+                    alt="Travelgo">
+
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="index.html">
+
+                            Trang chủ
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="tours.html">
+
+                            Tour
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"
+                            href="hotels.html">
+
+                            Khách sạn
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="flights.html">
+
+                            Vé máy bay
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="combo.html">
+
+                            Combo
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="blog.html">
+
+                            Blog
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="contact.html">
+
+                            Liên hệ
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <div class="nav-action">
+
+                    <a href="login.html"
+                        class="btn-login">
+
+                        Đăng nhập
+
+                    </a>
+
+                    <a href="register.html"
+                        class="btn-register">
+
+                        Đăng ký
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!--==========================
+        PAGE BANNER
+===========================-->
+
+<section class="page-banner">
+
+    <div class="container text-center">
+
+        <span>
+
+            Travelgo Hotel
+
+        </span>
+
+        <h1>
+
+            Đặt Khách Sạn Nhanh Chóng
+
+        </h1>
+
+        <p>
+
+            Hơn 3.000 khách sạn, resort và villa trên khắp Việt Nam với giá ưu đãi mỗi ngày.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+        HOTEL FILTER
+===========================-->
+
+<section class="tour-filter">
+
+    <div class="container">
+
+        <div class="filter-card">
+
+            <div class="row g-3">
+
+                <div class="col-lg-3">
+
+                    <label>
+
+                        Điểm đến
+
+                    </label>
+
+                    <select class="form-select">
+
+                        <option>Tất cả</option>
+
+                        <option>Phú Quốc</option>
+
+                        <option>Đà Nẵng</option>
+
+                        <option>Nha Trang</option>
+
+                        <option>Đà Lạt</option>
+
+                        <option>Hạ Long</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <label>
+
+                        Loại phòng
+
+                    </label>
+
+                    <select class="form-select">
+
+                        <option>Tất cả</option>
+
+                        <option>Standard</option>
+
+                        <option>Superior</option>
+
+                        <option>Deluxe</option>
+
+                        <option>Suite</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <label>
+
+                        Số sao
+
+                    </label>
+
+                    <select class="form-select">
+
+                        <option>Tất cả</option>
+
+                        <option>⭐⭐⭐⭐⭐</option>
+
+                        <option>⭐⭐⭐⭐</option>
+
+                        <option>⭐⭐⭐</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-lg-3 d-grid">
+
+                    <label>&nbsp;</label>
+
+                    <button class="btn-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Tìm khách sạn
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+        HOTEL LIST
+===========================-->
+
+<section class="hotel-list section-padding">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>
+
+                Khách sạn nổi bật
+
+            </span>
+
+            <h2>
+
+                Khách sạn được yêu thích nhất
+
+            </h2>
+
+            <p>
+
+                Lựa chọn nơi lưu trú phù hợp cho kỳ nghỉ của bạn.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+<!--==========================
+        HOTEL 1
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">
+
+            Luxury
+
+        </span>
+
+        <button class="wishlist-btn">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+        <img src="images/hotels/hotel1.jpg"
+            alt="Vinpearl Resort">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>4.9 (1.256 đánh giá)</span>
+
+            </div>
+
+            <h3>
+
+                Vinpearl Resort & Spa
+
+            </h3>
+
+            <p class="hotel-location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Phú Quốc
+
+            </p>
+
+            <div class="hotel-feature">
+
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+
+                <span><i class="fa-solid fa-person-swimming"></i> Hồ bơi</span>
+
+                <span><i class="fa-solid fa-utensils"></i> Nhà hàng</span>
+
+            </div>
+
+            <div class="hotel-price">
+
+                <small>Từ</small>
+
+                <h4>2.590.000đ</h4>
+
+                <span>/ đêm</span>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Xem phòng
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==========================
+        HOTEL 2
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge sale">
+
+            Giảm 25%
+
+        </span>
+
+        <button class="wishlist-btn">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+        <img src="images/hotels/hotel2.jpg"
+            alt="InterContinental">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>4.8 (965 đánh giá)</span>
+
+            </div>
+
+            <h3>
+
+                InterContinental Danang
+
+            </h3>
+
+            <p class="hotel-location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Đà Nẵng
+
+            </p>
+
+            <div class="hotel-feature">
+
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+
+                <span><i class="fa-solid fa-dumbbell"></i> Gym</span>
+
+                <span><i class="fa-solid fa-spa"></i> Spa</span>
+
+            </div>
+
+            <div class="hotel-price">
+
+                <small>Từ</small>
+
+                <h4>3.890.000đ</h4>
+
+                <span>/ đêm</span>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Xem phòng
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==========================
+        HOTEL 3
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">
+
+            Best Choice
+
+        </span>
+
+        <button class="wishlist-btn">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+        <img src="images/hotels/hotel3.jpg"
+            alt="Ana Mandara">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>4.8 (812 đánh giá)</span>
+
+            </div>
+
+            <h3>
+
+                Ana Mandara Cam Ranh
+
+            </h3>
+
+            <p class="hotel-location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Nha Trang
+
+            </p>
+
+            <div class="hotel-feature">
+
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+
+                <span><i class="fa-solid fa-umbrella-beach"></i> Bãi biển</span>
+
+                <span><i class="fa-solid fa-mug-hot"></i> Buffet</span>
+
+            </div>
+
+            <div class="hotel-price">
+
+                <small>Từ</small>
+
+                <h4>2.990.000đ</h4>
+
+                <span>/ đêm</span>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Xem phòng
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==========================
+        HOTEL 4
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">
+
+            Family
+
+        </span>
+
+        <button class="wishlist-btn">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+        <img src="images/hotels/hotel4.jpg"
+            alt="Terracotta">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+
+                ⭐⭐⭐⭐
+
+                <span>4.7 (658 đánh giá)</span>
+
+            </div>
+
+            <h3>
+
+                Terracotta Hotel
+
+            </h3>
+
+            <p class="hotel-location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Đà Lạt
+
+            </p>
+
+            <div class="hotel-feature">
+
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+
+                <span><i class="fa-solid fa-tree"></i> Vườn</span>
+
+                <span><i class="fa-solid fa-mug-hot"></i> Buffet</span>
+
+            </div>
+
+            <div class="hotel-price">
+
+                <small>Từ</small>
+
+                <h4>1.890.000đ</h4>
+
+                <span>/ đêm</span>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Xem phòng
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==========================
+        HOTEL 5
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge sale">
+
+            Flash Sale
+
+        </span>
+
+        <button class="wishlist-btn">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+        <img src="images/hotels/hotel5.jpg"
+            alt="FLC Hạ Long">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+
+                ⭐⭐⭐⭐⭐
+
+                <span>4.8 (543 đánh giá)</span>
+
+            </div>
+
+            <h3>
+
+                FLC Hạ Long Bay
+
+            </h3>
+
+            <p class="hotel-location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Hạ Long
+
+            </p>
+
+            <div class="hotel-feature">
+
+                <span><i class="fa-solid fa-person-swimming"></i> Hồ bơi</span>
+
+                <span><i class="fa-solid fa-golf-ball-tee"></i> Golf</span>
+
+                <span><i class="fa-solid fa-spa"></i> Spa</span>
+
+            </div>
+
+            <div class="hotel-price">
+
+                <small>Từ</small>
+
+                <h4>3.290.000đ</h4>
+
+                <span>/ đêm</span>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Xem phòng
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==========================
+        HOTEL 6
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">
+
+            Resort
+
+        </span>
+
+        <button class="wishlist-btn">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+        <img src="images/hotels/hotel6.jpg"
+            alt="Mường Thanh">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+
+                ⭐⭐⭐⭐
+
+                <span>4.6 (430 đánh giá)</span>
+
+            </div>
+
+            <h3>
+
+                Mường Thanh Luxury
+
+            </h3>
+
+            <p class="hotel-location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Huế
+
+            </p>
+
+            <div class="hotel-feature">
+
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+
+                <span><i class="fa-solid fa-spa"></i> Spa</span>
+
+                <span><i class="fa-solid fa-square-parking"></i> Bãi đỗ xe</span>
+
+            </div>
+
+            <div class="hotel-price">
+
+                <small>Từ</small>
+
+                <h4>1.690.000đ</h4>
+
+                <span>/ đêm</span>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Xem phòng
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<!--==========================
+        HOTEL 7
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">Business</span>
+
+        <button class="wishlist-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="images/hotels/hotel7.jpg" alt="Melia Hà Nội">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+                ⭐⭐⭐⭐⭐
+                <span>4.8 (735 đánh giá)</span>
+            </div>
+
+            <h3>Melia Hà Nội</h3>
+
+            <p class="hotel-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Hà Nội
+            </p>
+
+            <div class="hotel-feature">
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+                <span><i class="fa-solid fa-dumbbell"></i> Gym</span>
+                <span><i class="fa-solid fa-mug-hot"></i> Buffet</span>
+            </div>
+
+            <div class="hotel-price">
+                <small>Từ</small>
+                <h4>2.390.000đ</h4>
+                <span>/ đêm</span>
+            </div>
+
+            <a href="#" class="btn-book">Xem phòng</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HOTEL 8 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">Luxury</span>
+
+        <button class="wishlist-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="images/hotels/hotel8.jpg" alt="JW Marriott">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+                ⭐⭐⭐⭐⭐
+                <span>4.9 (1.025 đánh giá)</span>
+            </div>
+
+            <h3>JW Marriott Hanoi</h3>
+
+            <p class="hotel-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Hà Nội
+            </p>
+
+            <div class="hotel-feature">
+                <span><i class="fa-solid fa-spa"></i> Spa</span>
+                <span><i class="fa-solid fa-person-swimming"></i> Hồ bơi</span>
+                <span><i class="fa-solid fa-utensils"></i> Nhà hàng</span>
+            </div>
+
+            <div class="hotel-price">
+                <small>Từ</small>
+                <h4>4.590.000đ</h4>
+                <span>/ đêm</span>
+            </div>
+
+            <a href="#" class="btn-book">Xem phòng</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HOTEL 9 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge sale">Ưu đãi</span>
+
+        <button class="wishlist-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="images/hotels/hotel9.jpg" alt="Sheraton">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+                ⭐⭐⭐⭐⭐
+                <span>4.7 (624 đánh giá)</span>
+            </div>
+
+            <h3>Sheraton Sài Gòn</h3>
+
+            <p class="hotel-location">
+                <i class="fa-solid fa-location-dot"></i>
+                TP. Hồ Chí Minh
+            </p>
+
+            <div class="hotel-feature">
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+                <span><i class="fa-solid fa-car"></i> Đưa đón</span>
+                <span><i class="fa-solid fa-spa"></i> Spa</span>
+            </div>
+
+            <div class="hotel-price">
+                <small>Từ</small>
+                <h4>3.190.000đ</h4>
+                <span>/ đêm</span>
+            </div>
+
+            <a href="#" class="btn-book">Xem phòng</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HOTEL 10 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">Resort</span>
+
+        <button class="wishlist-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="images/hotels/hotel10.jpg" alt="Fusion Resort">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+                ⭐⭐⭐⭐⭐
+                <span>4.8 (502 đánh giá)</span>
+            </div>
+
+            <h3>Fusion Resort Cam Ranh</h3>
+
+            <p class="hotel-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Cam Ranh
+            </p>
+
+            <div class="hotel-feature">
+                <span><i class="fa-solid fa-person-swimming"></i> Hồ bơi</span>
+                <span><i class="fa-solid fa-spa"></i> Spa</span>
+                <span><i class="fa-solid fa-umbrella-beach"></i> Biển</span>
+            </div>
+
+            <div class="hotel-price">
+                <small>Từ</small>
+                <h4>3.890.000đ</h4>
+                <span>/ đêm</span>
+            </div>
+
+            <a href="#" class="btn-book">Xem phòng</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HOTEL 11 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">Mountain</span>
+
+        <button class="wishlist-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="images/hotels/hotel11.jpg" alt="Pao's Sapa">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+                ⭐⭐⭐⭐
+                <span>4.6 (416 đánh giá)</span>
+            </div>
+
+            <h3>Pao's Sapa Leisure</h3>
+
+            <p class="hotel-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Sa Pa
+            </p>
+
+            <div class="hotel-feature">
+                <span><i class="fa-solid fa-mountain"></i> View núi</span>
+                <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+                <span><i class="fa-solid fa-spa"></i> Spa</span>
+            </div>
+
+            <div class="hotel-price">
+                <small>Từ</small>
+                <h4>2.290.000đ</h4>
+                <span>/ đêm</span>
+            </div>
+
+            <a href="#" class="btn-book">Xem phòng</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HOTEL 12 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="hotel-item">
+
+        <span class="hotel-badge">Popular</span>
+
+        <button class="wishlist-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <img src="images/hotels/hotel12.jpg" alt="Victoria Cần Thơ">
+
+        <div class="hotel-content">
+
+            <div class="hotel-rating">
+                ⭐⭐⭐⭐
+                <span>4.7 (385 đánh giá)</span>
+            </div>
+
+            <h3>Victoria Cần Thơ Resort</h3>
+
+            <p class="hotel-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Cần Thơ
+            </p>
+
+            <div class="hotel-feature">
+                <span><i class="fa-solid fa-tree"></i> Sân vườn</span>
+                <span><i class="fa-solid fa-person-swimming"></i> Hồ bơi</span>
+                <span><i class="fa-solid fa-utensils"></i> Nhà hàng</span>
+            </div>
+
+            <div class="hotel-price">
+                <small>Từ</small>
+                <h4>1.990.000đ</h4>
+                <span>/ đêm</span>
+            </div>
+
+            <a href="#" class="btn-book">Xem phòng</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+    </div>
+</section>
+            

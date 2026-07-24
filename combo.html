@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Combo Du Lịch | Travelgo</title>
+
+    <meta name="description"
+        content="Đặt combo du lịch gồm vé máy bay, khách sạn và tour với mức giá ưu đãi tại Travelgo.">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<!-- Sử dụng lại Header của index.html -->
+<!-- Chỉ đổi menu Combo thành active -->
+
+<!--==========================
+        PAGE BANNER
+===========================-->
+
+<section class="page-banner">
+
+    <div class="container text-center">
+
+        <span>Travelgo Combo</span>
+
+        <h1>Combo Du Lịch Tiết Kiệm</h1>
+
+        <p>
+
+            Đặt trọn gói vé máy bay, khách sạn và tour chỉ trong một lần,
+            tiết kiệm chi phí và thời gian.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+        COMBO SEARCH
+===========================-->
+
+<section class="combo-search">
+
+    <div class="container">
+
+        <div class="filter-card">
+
+            <div class="row g-3">
+
+                <div class="col-lg-3">
+
+                    <label>Điểm đến</label>
+
+                    <select class="form-select">
+
+                        <option>Phú Quốc</option>
+                        <option>Đà Nẵng</option>
+                        <option>Đà Lạt</option>
+                        <option>Nha Trang</option>
+                        <option>Hạ Long</option>
+                        <option>Sa Pa</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-lg-2">
+
+                    <label>Ngày khởi hành</label>
+
+                    <input
+                        type="date"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-lg-2">
+
+                    <label>Số đêm</label>
+
+                    <select class="form-select">
+
+                        <option>2N1Đ</option>
+                        <option>3N2Đ</option>
+                        <option>4N3Đ</option>
+                        <option>5N4Đ</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-lg-2">
+
+                    <label>Số khách</label>
+
+                    <select class="form-select">
+
+                        <option>2 Người</option>
+                        <option>3 Người</option>
+                        <option>4 Người</option>
+                        <option>5 Người</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-lg-3 d-grid">
+
+                    <label>&nbsp;</label>
+
+                    <button class="btn-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Tìm Combo
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+        COMBO LIST
+===========================-->
+
+<section class="combo-page section-padding">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>Ưu đãi nổi bật</span>
+
+            <h2>Combo du lịch bán chạy nhất</h2>
+
+            <p>
+
+                Lựa chọn các gói du lịch trọn gói với mức giá ưu đãi,
+                phù hợp cho gia đình, cặp đôi và nhóm bạn.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+<!--==========================
+        FEATURED COMBO
+===========================-->
+
+<div class="col-12">
+
+    <div class="featured-combo">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="images/combo/combo1.jpg"
+                    class="img-fluid"
+                    alt="Combo Phú Quốc">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="combo-badge">
+
+                    🔥 Giảm 35%
+
+                </span>
+
+                <h2>
+
+                    Combo Phú Quốc 3N2Đ
+
+                </h2>
+
+                <p>
+
+                    Bao gồm vé khứ hồi Vietnam Airlines, 2 đêm tại Vinpearl Resort & Spa,
+                    buffet sáng, xe đưa đón sân bay và tour khám phá Nam Đảo.
+
+                </p>
+
+                <ul class="combo-feature-list">
+
+                    <li><i class="fa-solid fa-plane"></i> Vietnam Airlines khứ hồi</li>
+
+                    <li><i class="fa-solid fa-hotel"></i> Vinpearl Resort & Spa 5★</li>
+
+                    <li><i class="fa-solid fa-utensils"></i> Buffet sáng mỗi ngày</li>
+
+                    <li><i class="fa-solid fa-bus"></i> Đưa đón sân bay miễn phí</li>
+
+                </ul>
+
+                <div class="combo-price">
+
+                    <del>12.990.000đ</del>
+
+                    <h3>8.990.000đ / người</h3>
+
+                </div>
+
+                <a href="#" class="btn-book">
+
+                    Đặt Combo
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==========================
+        COMBO 1
+===========================-->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">
+
+            -30%
+
+        </span>
+
+        <img src="images/combo/combo2.jpg"
+            alt="Đà Nẵng">
+
+        <div class="combo-content">
+
+            <h4>
+
+                Đà Nẵng - Hội An 4N3Đ
+
+            </h4>
+
+            <p>
+
+                ✈ VietJet Air
+
+            </p>
+
+            <p>
+
+                🏨 Mường Thanh Luxury
+
+            </p>
+
+            <p>
+
+                🍽 Buffet + Xe đưa đón
+
+            </p>
+
+            <div class="combo-price">
+
+                <del>10.990.000đ</del>
+
+                <h5>7.690.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Đặt Combo
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COMBO 2 -->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">
+
+            -25%
+
+        </span>
+
+        <img src="images/combo/combo3.jpg"
+            alt="Đà Lạt">
+
+        <div class="combo-content">
+
+            <h4>
+
+                Đà Lạt 3N2Đ
+
+            </h4>
+
+            <p>✈ Vietnam Airlines</p>
+
+            <p>🏨 Terracotta Hotel</p>
+
+            <p>🍽 Buffet sáng</p>
+
+            <div class="combo-price">
+
+                <del>8.500.000đ</del>
+
+                <h5>6.390.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Đặt Combo
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COMBO 3 -->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">
+
+            -20%
+
+        </span>
+
+        <img src="images/combo/combo4.jpg"
+            alt="Nha Trang">
+
+        <div class="combo-content">
+
+            <h4>
+
+                Nha Trang 3N2Đ
+
+            </h4>
+
+            <p>✈ Bamboo Airways</p>
+
+            <p>🏨 InterContinental</p>
+
+            <p>🍽 Buffet + Spa</p>
+
+            <div class="combo-price">
+
+                <del>9.990.000đ</del>
+
+                <h5>7.990.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Đặt Combo
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COMBO 4 -->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">
+
+            -35%
+
+        </span>
+
+        <img src="images/combo/combo5.jpg"
+            alt="Hạ Long">
+
+        <div class="combo-content">
+
+            <h4>
+
+                Hạ Long 2N1Đ
+
+            </h4>
+
+            <p>✈ Vietnam Airlines</p>
+
+            <p>🏨 FLC Hạ Long</p>
+
+            <p>🍽 Buffet + Du thuyền</p>
+
+            <div class="combo-price">
+
+                <del>7.990.000đ</del>
+
+                <h5>5.190.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">
+
+                Đặt Combo
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<!--==========================
+        COMBO 5
+===========================-->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">-28%</span>
+
+        <img src="images/combo/combo6.jpg" alt="Huế - Đà Nẵng">
+
+        <div class="combo-content">
+
+            <h4>Huế - Đà Nẵng 4N3Đ</h4>
+
+            <p>✈ Vietnam Airlines</p>
+
+            <p>🏨 Melia Vinpearl Huế</p>
+
+            <p>🍽 Buffet + City Tour</p>
+
+            <div class="combo-price">
+
+                <del>11.490.000đ</del>
+
+                <h5>8.290.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">Đặt Combo</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COMBO 6 -->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">-22%</span>
+
+        <img src="images/combo/combo7.jpg" alt="Quy Nhơn">
+
+        <div class="combo-content">
+
+            <h4>Quy Nhơn 3N2Đ</h4>
+
+            <p>✈ Bamboo Airways</p>
+
+            <p>🏨 FLC Luxury Resort</p>
+
+            <p>🍽 Buffet + Xe đón</p>
+
+            <div class="combo-price">
+
+                <del>8.990.000đ</del>
+
+                <h5>6.990.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">Đặt Combo</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COMBO 7 -->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">-18%</span>
+
+        <img src="images/combo/combo8.jpg" alt="Sa Pa">
+
+        <div class="combo-content">
+
+            <h4>Sa Pa 3N2Đ</h4>
+
+            <p>✈ VietJet Air</p>
+
+            <p>🏨 Pao's Sapa Leisure</p>
+
+            <p>🍽 Buffet + Fansipan</p>
+
+            <div class="combo-price">
+
+                <del>9.590.000đ</del>
+
+                <h5>7.890.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">Đặt Combo</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COMBO 8 -->
+
+<div class="col-lg-3 col-md-6">
+
+    <div class="combo-card">
+
+        <span class="discount-badge">Hot</span>
+
+        <img src="images/combo/combo1.jpg" alt="Phú Quốc Premium">
+
+        <div class="combo-content">
+
+            <h4>Phú Quốc Premium 4N3Đ</h4>
+
+            <p>✈ Vietnam Airlines</p>
+
+            <p>🏨 InterContinental Phú Quốc</p>
+
+            <p>🍽 All Inclusive</p>
+
+            <div class="combo-price">
+
+                <del>16.990.000đ</del>
+
+                <h5>12.990.000đ</h5>
+
+            </div>
+
+            <a href="#" class="btn-book">Đặt Combo</a>
+
+        </div>
+
+    </div>
+
+</div>            

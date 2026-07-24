@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Du Lịch | Travelgo</title>
+
+    <meta name="description"
+        content="Chia sẻ kinh nghiệm, cẩm nang và cảm hứng du lịch cùng Travelgo.">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!--==========================
+        HEADER
+===========================-->
+
+<header class="header">
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="images/logo/logo.png"
+                    alt="Travelgo">
+
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="mainMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tour</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Khách sạn</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="flights.html">Vé máy bay</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="combo.html">Combo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+
+                </ul>
+
+                <div class="nav-action">
+
+                    <a href="login.html"
+                        class="btn-login">
+
+                        Đăng nhập
+
+                    </a>
+
+                    <a href="register.html"
+                        class="btn-register">
+
+                        Đăng ký
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!--==========================
+        PAGE BANNER
+===========================-->
+
+<section class="page-banner">
+
+    <div class="container text-center">
+
+        <span>
+
+            Travelgo Blog
+
+        </span>
+
+        <h1>
+
+            Cẩm nang & Kinh nghiệm du lịch
+
+        </h1>
+
+        <p>
+
+            Khám phá những điểm đến hấp dẫn, mẹo du lịch và kinh nghiệm hữu ích
+            giúp chuyến đi của bạn trở nên trọn vẹn hơn.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+        SEARCH BLOG
+===========================-->
+
+<section class="blog-search">
+
+    <div class="container">
+
+        <div class="filter-card">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-10">
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Tìm kiếm bài viết...">
+
+                </div>
+
+                <div class="col-lg-2 d-grid">
+
+                    <button class="btn-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Tìm kiếm
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+        BLOG LIST
+===========================-->
+
+<section class="blog-page section-padding">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>
+
+                Bài viết mới
+
+            </span>
+
+            <h2>
+
+                Cập nhật xu hướng du lịch mới nhất
+
+            </h2>
+
+            <p>
+
+                Chia sẻ kinh nghiệm, điểm đến nổi bật và các mẹo hữu ích dành cho
+                những người yêu thích khám phá.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+<!--==========================
+        FEATURED BLOG
+===========================-->
+
+<div class="col-12">
+
+    <div class="featured-blog">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="images/blog/blog1.jpg"
+                    class="img-fluid"
+                    alt="Phú Quốc">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="featured-tag">
+
+                    Nổi bật
+
+                </span>
+
+                <h2>
+
+                    Top 10 địa điểm đẹp nhất Phú Quốc năm 2026
+
+                </h2>
+
+                <p>
+
+                    Khám phá Bãi Sao, Hòn Móng Tay, Grand World, Sunset Town
+                    và nhiều địa điểm hấp dẫn khác để có một chuyến du lịch
+                    Phú Quốc đáng nhớ.
+
+                </p>
+
+                <div class="blog-meta">
+
+                    <span>
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        15/07/2026
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa-regular fa-user"></i>
+
+                        Travelgo Team
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="btn-book">
+
+                    Đọc ngay
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==========================
+        BLOG 1
+===========================-->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="blog-card">
+
+        <img src="images/blog/blog2.jpg"
+            alt="Đà Nẵng">
+
+        <div class="blog-content">
+
+            <span class="blog-category">
+
+                Du lịch
+
+            </span>
+
+            <h3>
+
+                Kinh nghiệm du lịch Đà Nẵng tự túc
+
+            </h3>
+
+            <p>
+
+                Những kinh nghiệm hữu ích giúp bạn khám phá Đà Nẵng tiết kiệm
+                và thuận tiện.
+
+            </p>
+
+            <div class="blog-footer">
+
+                <span>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    12/07/2026
+
+                </span>
+
+                <a href="#">
+
+                    Đọc tiếp →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- BLOG 2 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="blog-card">
+
+        <img src="images/blog/blog3.jpg"
+            alt="Huế">
+
+        <div class="blog-content">
+
+            <span class="blog-category">
+
+                Ẩm thực
+
+            </span>
+
+            <h3>
+
+                7 món ăn nhất định phải thử ở Huế
+
+            </h3>
+
+            <p>
+
+                Bún bò Huế, cơm hến, bánh bèo và nhiều món ngon nổi tiếng khác.
+
+            </p>
+
+            <div class="blog-footer">
+
+                <span>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    10/07/2026
+
+                </span>
+
+                <a href="#">
+
+                    Đọc tiếp →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- BLOG 3 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="blog-card">
+
+        <img src="images/blog/blog4.jpg"
+            alt="Hạ Long">
+
+        <div class="blog-content">
+
+            <span class="blog-category">
+
+                Kinh nghiệm
+
+            </span>
+
+            <h3>
+
+                Khám phá Hạ Long trong 2 ngày
+
+            </h3>
+
+            <p>
+
+                Lịch trình gợi ý giúp bạn khám phá Vịnh Hạ Long một cách trọn vẹn.
+
+            </p>
+
+            <div class="blog-footer">
+
+                <span>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    08/07/2026
+
+                </span>
+
+                <a href="#">
+
+                    Đọc tiếp →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- BLOG 4 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="blog-card">
+
+        <img src="images/blog/blog5.jpg"
+            alt="Đà Lạt">
+
+        <div class="blog-content">
+
+            <span class="blog-category">
+
+                Lịch trình
+
+            </span>
+
+            <h3>
+
+                Gợi ý lịch trình Đà Lạt 3N2Đ
+
+            </h3>
+
+            <p>
+
+                Các địa điểm check-in đẹp và lịch trình hợp lý cho kỳ nghỉ.
+
+            </p>
+
+            <div class="blog-footer">
+
+                <span>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    05/07/2026
+
+                </span>
+
+                <a href="#">
+
+                    Đọc tiếp →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- BLOG 5 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="blog-card">
+
+        <img src="images/blog/blog6.jpg"
+            alt="Nha Trang">
+
+        <div class="blog-content">
+
+            <span class="blog-category">
+
+                Resort
+
+            </span>
+
+            <h3>
+
+                Những resort đẹp nhất Nha Trang
+
+            </h3>
+
+            <p>
+
+                Danh sách các resort sang trọng phù hợp cho kỳ nghỉ dưỡng.
+
+            </p>
+
+            <div class="blog-footer">
+
+                <span>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    03/07/2026
+
+                </span>
+
+                <a href="#">
+
+                    Đọc tiếp →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- BLOG 6 -->
+
+<div class="col-lg-4 col-md-6">
+
+    <div class="blog-card">
+
+        <img src="images/blog/blog7.jpg"
+            alt="Quy Nhơn">
+
+        <div class="blog-content">
+
+            <span class="blog-category">
+
+                Điểm đến
+
+            </span>
+
+            <h3>
+
+                Những bãi biển đẹp ở Quy Nhơn
+
+            </h3>
+
+            <p>
+
+                Khám phá Kỳ Co, Eo Gió và những bãi biển đẹp nhất Quy Nhơn.
+
+            </p>
+
+            <div class="blog-footer">
+
+                <span>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    01/07/2026
+
+                </span>
+
+                <a href="#">
+
+                    Đọc tiếp →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>            
